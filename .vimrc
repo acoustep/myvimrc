@@ -50,6 +50,7 @@ NeoBundle 'nono/vim-handlebars'
 NeoBundle 'mutewinter/nginx.vim'
 NeoBundle 'skwp/vim-rspec'
 NeoBundle 'xsbeats/vim-blade'
+NeoBundle 'jtratner/vim-flavored-markdown'
 
 filetype plugin indent on " Required for NeoBundle
 
@@ -137,6 +138,11 @@ autocmd BufRead,BufWritePre *.html normal gg=G
 augroup vimscript
   autocmd!
   autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
+
+augroup markdown
+	au!
+	au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
 " Functions
 " Tab means space or buffer search 
