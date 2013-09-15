@@ -31,6 +31,8 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tobyS/pdv' " PHPDocs
+NeoBundle 'depuracao/vim-rdoc'
 
 " NeoBundle Languages
 NeoBundle 'elzr/vim-json'
